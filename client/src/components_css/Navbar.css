@@ -1,0 +1,153 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .50rem 5%;
+    background: #000000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  /* Animated gradient overlay */
+  .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(42, 51, 65, 0.7) 0%,
+      rgba(22, 27, 34, 0.7) 25%,
+      rgba(13, 17, 23, 0.7) 50%,
+      rgba(22, 27, 34, 0.7) 75%,
+      rgba(13, 17, 23, 0.7) 100%
+    );
+    background-size: 200% 100%;
+    z-index: -1;
+    animation: gradientFlow 8s ease infinite;
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .image {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    object-fit: contain;
+    filter: brightness(0.9) contrast(1.1); /* Makes images blend better with dark background */
+    transition: filter 0.3s ease, transform 0.2s ease;
+  }
+  
+  .image:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+  }
+  
+  .car-image {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    object-fit: contain;
+    filter: brightness(0.9) contrast(1.1);
+    transition: filter 0.3s ease, transform 0.2s ease;
+  }
+  
+  .car-image:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+  }
+  
+ /* Enhanced button hover effect */
+.btn-navbar {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #1f2937;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn-navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: -1;
+  }
+  
+  .btn-navbar:hover {
+    background-color: #2d3748;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn-navbar:hover::before {
+    transform: translateX(100%);
+  }
+  
+  /* Add subtle border glow on hover */
+  .btn-navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0 rgba(78, 143, 230, 0);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .btn-navbar:hover::after {
+    box-shadow: 0 0 0 2px rgba(78, 143, 230, 0.3);
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 10px; /* Adds space between the divs */
+    align-items: center; /* Aligns items vertically */
+  }
+
+.btn-signout {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: var(--color-btn-secondary-bg);
+  color: var(--color-text-primary);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-signout:hover {
+  box-shadow: 0 0 0 0.5px #f85149; /* thin red outline */
+  border-color: #f85149;         /* optional: solid red border on hover */
+}
+

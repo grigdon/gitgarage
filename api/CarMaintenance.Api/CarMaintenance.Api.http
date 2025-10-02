@@ -1,0 +1,6 @@
+@CarMaintenance.Api_HostAddress = http://localhost:5191
+
+GET {{CarMaintenance.Api_HostAddress}}/maintenanceMan/
+Accept: application/json
+
+###

@@ -1,0 +1,31 @@
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .page-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      rgba(42, 51, 65, 0.7) 0%,
+      rgba(22, 27, 34, 0.7) 25%,
+      rgba(13, 17, 23, 0.7) 50%,
+      rgba(22, 27, 34, 0.7) 75%,
+      rgba(13, 17, 23, 0.7) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientFlow 1s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
