@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CarMaintenance.Api.props" />
+</Project>
