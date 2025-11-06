@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/grigdon/projects/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj": {}
+    "/home/gaber/Code/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj": {}
   },
   "projects": {
-    "/home/grigdon/projects/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj": {
+    "/home/gaber/Code/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/grigdon/projects/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj",
+        "projectUniqueName": "/home/gaber/Code/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj",
         "projectName": "CarMaintenance.Api",
-        "projectPath": "/home/grigdon/projects/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj",
-        "packagesPath": "/home/grigdon/.nuget/packages/",
-        "outputPath": "/home/grigdon/projects/gitgarage/api/CarMaintenance.Api/obj/",
+        "projectPath": "/home/gaber/Code/gitgarage/api/CarMaintenance.Api/CarMaintenance.Api.csproj",
+        "packagesPath": "/home/gaber/.nuget/packages/",
+        "outputPath": "/home/gaber/Code/gitgarage/api/CarMaintenance.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/grigdon/.nuget/NuGet/NuGet.Config"
+          "/home/gaber/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,13 +32,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -89,20 +82,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -111,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
